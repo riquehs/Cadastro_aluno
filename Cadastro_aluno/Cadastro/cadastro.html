@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="desing.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html"><button class="button">Voltar</button></a>
+    </nav>
+
+    <center><h1>Preencha seus dados</h1></center>
+    <section id="cadastro">
+        <form action="/submit_registration">
+            <fieldset>
+                <legend><p>Dados</p></legend>
+
+            <label for="pname"><p>Primeiro Nome</p></label>
+            <input type="text" id="pname" name="pname" required>
+
+            <label for="sname">Segundo Nome</label>
+            <input type="text" name="sname" id="sname" required>
+
+            <label for="Data">Data de nascimento</label>
+            <input type= "date" name="data" id="data" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" maxlength="50" required>
+
+            </fieldset>
+        
+            <fieldset>
+                <legend>Sexo</legend>
+
+                <input type="radio" name="sexo" id="m">Masculino
+                <input type="radio" name="sexo" id="f">Feminino
+                <input type="radio" name="sexo" id="outro">Outro <br>
+               
+            </fieldset>
+        
+            <fieldset>
+                <legend>Preferencias</legend>
+
+                <label for="esporte">Esporte</label>
+                <input type="checkbox" name="esport" id="esport" value="esporte"><br>
+
+                <label for="musica">Música</label>
+                <input type="checkbox" name="musica" id="musica" value="musica"><br>
+
+                <label for="arte">Artes</label>
+                <input type="checkbox" name="arte" id="arte" value="arte"><br>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Observações</legend>
+                <label for="text">Observação</label>
+                <textarea name="obsv" rows="4" cols="50"></textarea>
+            </fieldset>
+        </form>
+        <button type="submit" class="button">Cadastrar</button>
+    </section>
+
+</body>
+</html>
