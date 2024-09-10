@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="desing.css">
+    <style>
+        form{
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <nav>
+            <a href="index.html"><button class="button">Voltar</button></a>
+        </nav>
+    </div>
+    <section id="cadastro">
+    <form action="submit">
+
+        <label for="Nome">Nome</label>
+        <input type="text" name="Nome" required>
+
+        <label for="obsv">Observações</label>
+        <input type="email" name="email" maxlength="50" required><br>
+
+        <label for="mensagem">Mensagem</label><br>
+        <textarea name="msg" id="msg" rows="10" cols="50">Dixe Sua mensagem</textarea><br>
+
+        <button type="submit" class="button">Enviar</button>
+    </form>
+    </section>
+</body>
+</html>
